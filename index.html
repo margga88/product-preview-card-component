@@ -14,17 +14,14 @@
 
   <title>Product preview card component by Martha González</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+ 
 </head>
 <body>
   <main class="card-wrapper">
     <div class="card">
       <div class="image-wrapper">
-        <img src="./images/image-product-mobile.jpg" alt="a bottle of Chanel perfume">
+        <img src="./images/image-product-mobile.jpg" class="mobile-img" alt="a bottle of Chanel perfume">
+        <img src="./images/image-product-desktop.jpg" class="desktop-img" alt="a bottle of Chanel perfume">
       </div>
 
       <div class="product-info">
@@ -39,9 +36,9 @@
           <h2 class="offer-price">$149.99</h2>
           <p class="original-price">$169.99</p>
         </div>
-      
-
-        <button type="button">Add to Cart</button>
+               
+        <button type="button" class="cart-button"><img src="./images/icon-cart.svg" alt="cart icon"/>Add to Cart</button>
+       
       </div>
     </div>
   </main>
