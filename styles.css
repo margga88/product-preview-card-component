@@ -95,6 +95,8 @@ html {
 }
 
 
+
+
 /*-- COMPOSITION --*/
 
 body {
@@ -130,8 +132,7 @@ body {
 .desktop-img {
     display: none;
     position: absolute;
-    visibility: hidden;
-    
+    visibility: hidden;    
 }
 
 .product-info {
@@ -148,8 +149,7 @@ body {
     flex-direction: row;    
     height: 48px;
     place-items: center;
-    margin: 0 auto;
-    
+    margin: 0 auto;    
 }
 
 .price p {
@@ -163,6 +163,8 @@ footer {
     height: 14px;
     bottom: 5px;
 }
+
+
 
 
 /* UTILITIES */
@@ -186,8 +188,6 @@ footer {
 .attribution a {    
     color: var(--green-500); 
 }
-
-
 
 
 
@@ -301,7 +301,6 @@ button img {
         height: 500px;
         margin: 0 auto;
     }
-
     
     .product-info .product-desc, 
     .product-info .price {
@@ -341,14 +340,6 @@ button img {
         height: 55px;
         border-radius: 11px;         
     }
-
-   
-
-    
-
-
-
-
 
 }
 
