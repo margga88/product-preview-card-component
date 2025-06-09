@@ -99,7 +99,7 @@ html {
 
 body {
     display: flex;
-    min-width: 320px;
+    min-width: 350px;
     place-items: center;
     box-sizing: border-box;
     margin: 0;
@@ -108,20 +108,20 @@ body {
 }
 
 .card-wrapper {
-    min-width: 310px;
+    min-width: 340px;
     height: auto;
     margin: 0 auto;    
 }
 
 .card {
     background-color: var(--white);
-    width: 310px;
+    width: 340px;
     height: auto;
     border-radius: 10px;    
 }
 
 .image-wrapper, .mobile-img {
-    width: 310px;
+    width: 340px;
     height: auto;
     border-radius: 10px 10px 0px 0px;    
 }
@@ -131,10 +131,12 @@ body {
     display: none;
     position: absolute;
     visibility: hidden;
+    
 }
 
 .product-info {
     margin: 22px;
+    height: 330px;
 }
 
 .product-info h1 {
@@ -170,13 +172,13 @@ footer {
 }
 
 .product-name {    
-    font-size: 2.08em;
+    font-size: 2.25em;
     font-weight: var(--ftwgt-700);
     line-height: 1;
 }
 
 .offer-price {
-    font-size: 2.08em;
+    font-size: 2.25em;
     color: var(--green-500);
 }
 
@@ -206,13 +208,13 @@ footer {
 }
 
 .product-desc {    
-    font-size: 0.95em;    
+    font-size: 1em;    
     color: var(--grey);
     line-height: 1.5;
 }
 
 .original-price {    
-    font-size: 0.95em;    
+    font-size: 1em;    
     text-decoration: line-through;
     color: var(--grey);
 }
@@ -257,6 +259,14 @@ button img {
     background-color: var(--green-700);     
 }
 
+@media only screen and (width < 375px) {   
+
+    footer {
+        position: fixed;
+    }
+
+}
+
 
 @media only screen and (min-width: 992px) {
 
@@ -283,6 +293,7 @@ button img {
         visibility: visible;
         width: 325px;
         height: 500px;
+        border-radius: 10px 0px 0px 10px;
     }
 
     .product-info {
@@ -291,15 +302,28 @@ button img {
         margin: 0 auto;
     }
 
-    .product-info .product-tag, 
-    .product-info .product-name, 
+    
     .product-info .product-desc, 
     .product-info .price {
-        margin: 30px 33px;
+        margin: 32px 33px;
+    }
+
+    .product-info .product-tag {
+        margin: 33px 33px 25px 33px;
+    }
+
+    .product-tag {
+        font-size: 0.95em;
+        letter-spacing: 6px;
+    }
+
+    .product-info .product-name {
+        margin: 5px 33px;
     }
 
     .product-name {
         font-size: 2.5em;
+        
     }
 
     .product-desc {
@@ -308,13 +332,14 @@ button img {
     }
 
     .offer-price {
-        font-size: 2.5em;
+        font-size: 2.5em;        
     }
 
     .cart-button {
-        margin: 0px 33px;
+        margin: -5px 33px 20px 33px;
         width: 260px;
-        height: 50px;         
+        height: 55px;
+        border-radius: 11px;         
     }
 
    
